@@ -1,5 +1,4 @@
 # Color_Format_Handler
-Homework 3: 
 
 There are two options in this project:
 Option 1. External JS, consider, a user wants to see a javascript file (example.js)
