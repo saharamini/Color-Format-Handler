@@ -43,21 +43,21 @@ IN OPTION 2: Please place asp.net file ("Default.aspx") in inetpub->wwwroot->"ja
 Removed all *.aspx and add my own *.aspx in IIS
 my configuration file:
 
---<?xml version="1.0" encoding="UTF-8"?>
-<configuration>
-    <system.webServer>
-        <handlers>
-            <remove name="PageHandlerFactory-ISAPI-4.0_64bit" />
-            <remove name="PageHandlerFactory-ISAPI-4.0_32bit" />
-            <remove name="PageHandlerFactory-ISAPI-2.0-64" />
-            <remove name="PageHandlerFactory-ISAPI-2.0" />
-            <remove name="PageHandlerFactory-Integrated-4.0" />
-            <remove name="PageHandlerFactory-Integrated" />
-            <add name="javaScript" path="*.aspx" verb="*" type="ColorFormatHandler.ColorFormat" resourceType="Unspecified" preCondition="integratedMode" />
-            <add name="javaScriptFile" path="*.js" verb="*" type="ColorFormatHandler.ColorFormat" resourceType="Unspecified" preCondition="integratedMode" />
-        </handlers>
-    </system.webServer>
-</configuration>
+-<?xml version="1.0" encoding="UTF-8"?>
+-<configuration>
+-    <system.webServer>
+-        <handlers>
+-            <remove name="PageHandlerFactory-ISAPI-4.0_64bit" />
+-            <remove name="PageHandlerFactory-ISAPI-4.0_32bit" />
+-            <remove name="PageHandlerFactory-ISAPI-2.0-64" />
+-            <remove name="PageHandlerFactory-ISAPI-2.0" />
+-            <remove name="PageHandlerFactory-Integrated-4.0" />
+-            <remove name="PageHandlerFactory-Integrated" />
+-            <add name="javaScript" path="*.aspx" verb="*" type="ColorFormatHandler.ColorFormat" resourceType="Unspecified" preCondition="integratedMode" />
+-            <add name="javaScriptFile" path="*.js" verb="*" type="ColorFormatHandler.ColorFormat" resourceType="Unspecified" preCondition="integratedMode" />
+-        </handlers>
+-    </system.webServer>
+-</configuration>
 
 ------
 please don't forget to enable Directory Browsing by going to IIS, click on the project, choose Directory Browsing,
