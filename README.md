@@ -43,7 +43,7 @@ IN OPTION 2: Please place asp.net file ("Default.aspx") in inetpub->wwwroot->"ja
 Removed all *.aspx and add my own *.aspx in IIS
 my configuration file:
 
-'''
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <system.webServer>
@@ -59,7 +59,7 @@ my configuration file:
         </handlers>
     </system.webServer>
 </configuration>
-'''
+```
 ------
 please don't forget to enable Directory Browsing by going to IIS, click on the project, choose Directory Browsing,
 and click enable
