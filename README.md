@@ -43,7 +43,7 @@ IN OPTION 2: Please place asp.net file ("Default.aspx") in inetpub->wwwroot->"ja
 Removed all *.aspx and add my own *.aspx in IIS
 my configuration file:
 
-<?xml version="1.0" encoding="UTF-8"?>
+--<?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <system.webServer>
         <handlers>
